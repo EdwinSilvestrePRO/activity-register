@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-Es" dir="ltr"> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="Este es un pequeno programa para registar las actividades de lo que sea"/>
+	<meta charset="uft-8">
+	<title>Register</title>
+	<link rel="stylesheet" href="./CSS/insert-styles.css"/>
+</head>
+<body> 
+<header> 
+	<h1>Activity Register</h1>
+</header>
+<main>
+<form action="" method="post" enctype="multipart/form-data">
+	<label for="add-activity" class="intro">Add Activity</label>
+	<textarea id="add-activity" placeholder="
+	*name-Activity
+	@(
+	this is activity for add...
+	) 
+	![
+	hour: 13:22
+
+	day: thursday
+
+	date: 14/07/2022
+	]
+	for add acctivity write and press <Enter>
+	add$"></textarea>
+<!-- 	<button id="insert">Insert</button> -->
+</form>	
+	<header>
+		<h2>The activities in action</h2>
+		<mark id="counter">0</mark>
+	</header>	
+</main>
+	<p id="none">I sorry, Not activity here</p>
+	
+		<template id="model-activity">
+		<div class="activity">
+		<svg class="delete" width="30" height="30" style="cursor:pointer">
+	<path d="M0 0 L 30 30 Z M 30 0 L0 30" stroke="red" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" class="delete"></path>
+</svg>
+		<p class="title">title<br>
+			&<br>
+			monday 14:51 14/07/2022
+		</p>
+		<p class="content">
+			this is my content for add...
+		</p>
+	</div>	
+		</template>
+		
+<script type="application/javascript" src="./ES/main.js"></script>
+</body>
+</html> 

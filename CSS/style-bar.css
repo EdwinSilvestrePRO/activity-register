@@ -1,0 +1,28 @@
+html, body {
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+html::-webkit-scrollbar,
+html::-webkit-scrollbar * {
+	appearance:none;	
+	-webkit-appearance:none;
+	-moz-appearance:none;
+
+}
+html::-webkit-scrollbar {
+	width:12px;
+	background: none;
+}
+html::-webkit-scrollbar-button {
+	display: none;
+}
+html::-webkit-scrollbar-track {
+	background: none;
+	width:12px;
+}
+html::-webkit-scrollbar-thumb {
+	width:10px;
+	background-color:purple;
+	border-radius:5px;
+}

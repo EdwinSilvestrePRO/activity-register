@@ -1,0 +1,86 @@
+@import "./style-bar.css" all;
+
+body {
+	background-color: black;
+	color:white;
+}
+
+header:not(main header) {
+	background-color:darkblue;
+	margin-top:0px;
+	padding: 5px;
+	color:yellow;
+	font: bolder 2em consolas;
+}
+header mark {
+	font-size:2em;
+	padding:1px;
+	border-radius: 1em;
+	background-color: black;
+	color:yellow;
+}
+main {
+	background-color:lightskyblue;
+}
+main form {
+	width:90vw;
+	background-color:yellow;
+	color:black;
+	padding:2px;
+	margin:2px auto;
+}
+
+main form label.intro {
+	display:block;
+	background-color:red;
+	font: bold 3em monospace;
+	text-align:center;
+	color:white;
+}
+
+main form textarea {
+	display: block;
+	background-color:black;
+	font-size: 2em;
+	color:yellow;
+	min-width: 80%;
+	min-height: 500px;
+	resize:both;
+	max-width: 95%;
+	margin:auto;
+}
+main header {
+	text-align:center;
+	background-color:purple;
+	color:yellow;
+	margin:20px;
+	padding:2px;
+	font:bold 2em monospace;
+	text-align:center;
+}
+#none {
+	background-color:transparent;
+	color:gray;
+	font:bold 2em consolas;
+	text-align:center;
+}
+
+div.activity {
+	margin:36px auto;
+	border-radius: 1em;
+	border:2px dotted yellow;
+	width:80vw;
+	padding:10px;
+	background:#4444;
+	text-align:right;
+}
+
+div.activity p.title {
+	text-align: center;
+	font:bolder 2em consolas;
+	text-decoration:underline yellow dotted;
+}
+div.activity p.content {
+	text-align: center;
+	font:bolder 1.5em consolas;
+}
