@@ -1,5 +1,22 @@
-console.log("hello world");
+import {
+    AddActivity
+} from './add.js';
 
-let it = 1;
+const $textarea = document.getElementById("add-activity");
 
-for (; it <= 310; it++) document.body.innerHTML += "<br>";
+$textarea
+.addEventListener("add", AddActivity,
+{once: false, capture: true});
+
+
+document.addEventListener("keypress", (ev)=> {
+    if(ev.keyCode === 13 || ev.key == "Enter") {
+        const {value} = $textarea,
+        isAdd = /add\$/i,
+        Add = new Event("add");
+        if(isAdd.test(value)){
+            $textarea.dispatchEvent(Add);
+        }
+
+    }
+});

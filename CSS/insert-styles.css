@@ -1,4 +1,5 @@
 @import "./style-bar.css" all;
+@import "./error.css" all;
 
 body {
 	background-color: black;

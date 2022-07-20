@@ -15,19 +15,19 @@
 <main>
 <form action="" method="post" enctype="multipart/form-data">
 	<label for="add-activity" class="intro">Add Activity</label>
-	<textarea id="add-activity" placeholder="
-	*name-Activity
-	@(
-	this is activity for add...
-	) 
-	![
-	hour: 13:22
+	<textarea id="add-activity" placeholder=
+"*name-Activity*
+@(
+this is activity for add...
+) 
+![
+hour: 13:22
 
-	day: thursday
+day: thursday
 
-	date: 14/07/2022
-	]
-	for add acctivity write and press <Enter>
+date: 14/07/2022
+]
+for add acctivity write and press <Enter>
 	add$"></textarea>
 <!-- 	<button id="insert">Insert</button> -->
 </form>	
@@ -36,8 +36,11 @@
 		<mark id="counter">0</mark>
 	</header>	
 </main>
-	<p id="none">I sorry, Not activity here</p>
-	
+	<!-- <p id="none">I sorry, Not activity here</p> -->
+
+	<div id="Errors">
+		<p>this is my Error</p>
+	</div>
 		<template id="model-activity">
 		<div class="activity">
 		<svg class="delete" width="30" height="30" style="cursor:pointer">
@@ -53,6 +56,6 @@
 	</div>	
 		</template>
 		
-<script type="application/javascript" src="./ES/main.js"></script>
+<script type="module" src="./ES/main.js"></script>
 </body>
 </html> 
