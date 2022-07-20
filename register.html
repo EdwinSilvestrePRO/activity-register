@@ -19,16 +19,10 @@
 "*name-Activity*
 @(
 this is activity for add...
-) 
-![
-hour: 13:22
-
-day: thursday
-
-date: 14/07/2022
-]
+)
 for add acctivity write and press <Enter>
-	add$"></textarea>
+add$
+"></textarea>
 <!-- 	<button id="insert">Insert</button> -->
 </form>	
 	<header>
@@ -36,10 +30,15 @@ for add acctivity write and press <Enter>
 		<mark id="counter">0</mark>
 	</header>	
 </main>
-	<!-- <p id="none">I sorry, Not activity here</p> -->
+	<p id="none">I sorry, Not activity here</p>
 
-	<div id="Errors">
-		<p>this is my Error</p>
+	<div id="error" class="hidden">
+		<svg class="changeClass" width="30" height="30" style="cursor:pointer">
+			<path d="M0 0 L 30 30 Z M 30 0 L0 30" stroke="red" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" class="changeClass"></path>
+		</svg><br />
+		<p class="message">
+
+		</p>
 	</div>
 		<template id="model-activity">
 		<div class="activity">
@@ -55,7 +54,7 @@ for add acctivity write and press <Enter>
 		</p>
 	</div>	
 		</template>
-		
+	
 <script type="module" src="./ES/main.js"></script>
 </body>
 </html> 
