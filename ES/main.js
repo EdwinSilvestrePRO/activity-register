@@ -1,7 +1,6 @@
-import {
-    AddActivity,
-    addElement
-} from './add.js';
+import { AddActivity,  addElement } from './add.js';
+import Deleting from './delete.js';
+
 document.addEventListener("DOMContentLoaded", (e)=> {
     if(localStorage.getItem("localActivity") == null) localStorage.setItem("localActivity", JSON.stringify([]));
     else addElement(JSON.parse(localStorage.getItem("localActivity")), true);
@@ -27,4 +26,5 @@ document.addEventListener("keypress", (ev)=> {
 
 document.addEventListener("click", (ev)=>  {
    if(ev.target.matches(".changeClass")) document.getElementById("error").className = "hidden";
+   else if(ev.target.matches(".delete")) Deleting(ev.target);
 });

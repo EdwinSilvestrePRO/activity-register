@@ -7,6 +7,7 @@ export function addElement(all, is = false){
         const $template = document.getElementById("model-activity").content;
         $template.querySelector(".title").innerHTML = newItem.title+"<br>&<br>"+ newItem.date;
         $template.querySelector(".content").innerHTML = newItem.contentActivity;
+        $template.querySelector(".activity").classList.add("runNow");
         
         let node = document.importNode($template, true);
         document.body.appendChild(node);
@@ -21,6 +22,7 @@ export function addElement(all, is = false){
         const $template = document.getElementById("model-activity").content;
         $template.querySelector(".title").innerHTML = newItem.title+"<br>&<br>"+ newItem.date;
         $template.querySelector(".content").innerHTML = newItem.contentActivity;
+        $template.querySelector(".activity").classList.add("runNow");
         
         let node = document.importNode($template, true);
         $$frag.appendChild(node);
